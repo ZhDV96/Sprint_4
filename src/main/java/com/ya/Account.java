@@ -15,7 +15,7 @@ public class Account {
     public boolean checkNameToEmboss(String name) {
 
         int whiteSpaceIndex = name.indexOf(' ');
-
+        int whiteSpaceIndexAfter = name.lastIndexOf(' ');
 
         /*
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
@@ -26,8 +26,8 @@ public class Account {
             System.out.println("Имя держателя карты отсутствует.Добавьте имя");
             return false;
         } else {
-            if (whiteSpaceIndex == -1 || whiteSpaceIndex == 0 || whiteSpaceIndex == 0) {
-                System.out.println("В имени держателя карты присутствуют некорретные пробелы. Добавьте имя повторно");
+            if (whiteSpaceIndex == -1 || whiteSpaceIndex == 0 || whiteSpaceIndexAfter == name.length()-1) {
+                System.out.println("В имени держателя карты присутствует некорретное использование пробелов. Добавьте имя повторно");
                 return false;
             } else {
                 if (whiteSpaceIndex != name.lastIndexOf(" ")) {
