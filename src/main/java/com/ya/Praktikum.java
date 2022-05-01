@@ -2,7 +2,7 @@ package com.ya;
 
 public class Praktikum {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         /*
              В этом методе заложи логику работы с классом Account.
              Нужно создать экземпляр класса Account: в качестве аргумента передать тестируемое имя
