@@ -30,7 +30,7 @@ public class CardHolderParameterizedNameTest {
     }
 
     @Test
-    public void checkCardHolderName() {
+    public void checkCardHolderName() throws Exception {
         Account account = new Account(name);
         Boolean isNameCorrect = account.checkNameToEmboss(account.getName());
         MatcherAssert.assertThat(isNameCorrect, is(not(false)));
