@@ -1,7 +1,7 @@
 Final project of the fourth sprint 
 ====
 
-Перед началом работы
+#Перед началом работы
 Необходимо, чтобы были уставновлены:
 •	IntelliJ IDEA + Maven
 •	Docker desktop 
